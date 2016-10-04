@@ -1,0 +1,27 @@
+{
+  "name": "gaming101_exercise",
+  "version": "1.0.0",
+  "description": "MEAN stack game exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnDHamm/gaming101_exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnDHamm/gaming101_exercise/issues"
+  },
+  "homepage": "https://github.com/JohnDHamm/gaming101_exercise#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.6.2",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "^1.4.8"
+  }
+}
