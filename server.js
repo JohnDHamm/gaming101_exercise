@@ -18,7 +18,17 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => res.render('index'));
 
-server.listen(PORT, () => console.log("Server listening on port: ", PORT));
+mongoose.connect(MONGODB_URL, () => {
+	server.listen(PORT, () => console.log("Server listening on port: ", PORT));
+})
+
+const Game = mongoose.model('game', {
+	board: [
+		[String, String, String],
+		[String, String, String],
+		[String, String, String],
+	]
+})
 
 io.on('connect', socket => {
 	console.log(`Socket connected: ${socket.id}`);
